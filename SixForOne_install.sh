@@ -605,7 +605,7 @@ install_ssr() {
       echo -e "${Info}开始安装SSR……"
       sleep 2
       [[ ! -d ${ssr_conf_dir} ]] && mkdir ${ssr_conf_dir}
-      wget --no-check-certificate -O ${ssr_conf_dir}/shadowsocks-all.sh https://raw.githubusercontent.com/JeannieStudio/jeannie/master/shadowsocks-all.sh
+      wget --no-check-certificate -O ${ssr_conf_dir}/shadowsocks-all.sh https://raw.githubusercontent.com/yww325/jeannie/refs/heads/master/shadowsocks-all.sh
       chmod +x ${ssr_conf_dir}/shadowsocks-all.sh
       \n | . ${ssr_conf_dir}/shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
       ;;
@@ -616,7 +616,7 @@ install_ssr() {
     echo -e "${Info}开始安装SSR……"
     sleep 2
     [[ ! -d ${ssr_conf_dir} ]] && mkdir ${ssr_conf_dir}
-    wget --no-check-certificate -O ${ssr_conf_dir}/shadowsocks-all.sh https://raw.githubusercontent.com/JeannieStudio/jeannie/master/shadowsocks-all.sh
+    wget --no-check-certificate -O ${ssr_conf_dir}/shadowsocks-all.sh https://raw.githubusercontent.com/yww325/jeannie/refs/heads/master/shadowsocks-all.sh
     chmod +x ${ssr_conf_dir}/shadowsocks-all.sh
     \n | . ${ssr_conf_dir}/shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
   fi
